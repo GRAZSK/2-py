@@ -1,0 +1,4 @@
+n = int(input())
+arr = [int(input()) for _ in range(n)]
+has_two_zeros = any(arr[i] == 0 and arr[i+1] == 0 for i in range(len(arr)-1))
+print("YES" if has_two_zeros else "NO")
