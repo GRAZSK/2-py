@@ -1,0 +1,8 @@
+import random
+rows = int(input())
+cols = int(input())
+matrix = [[random.randint(-20, 20) for _ in range(cols)] for _ in range(rows)]
+min_val = min(min(row) for row in matrix)
+print(min_val)
+print(matrix[1])
+print([row[0] for row in matrix])
