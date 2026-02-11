@@ -1,0 +1,8 @@
+import random
+n = int(input())
+arr = [random.randint(0, 100) for _ in range(n)]
+div_by_3 = sum(1 for x in arr if x % 3 == 0)
+even_numbers = [x for x in arr if x % 2 == 0]
+avg_even = sum(even_numbers) / len(even_numbers) if even_numbers else 0
+print(div_by_3)
+print(avg_even)
